@@ -1,0 +1,18 @@
+<template>
+    <lightning-card>
+        <template lwc:if={isGetData}>
+            <div class="slds-box slds-var-m-around_medium">
+                <div class="slds-var-p-around_small">
+                    <lightning-input data-int="id" label="RecordId" name="RecordId" onchange={handleChange}></lightning-input><br>
+                    <lightning-input data-int1="name" label="Name" name="Name" onchange={handleChange}></lightning-input><br>
+                    <lightning-combobox label="Industry" options={pickLstOptions} onchange={handleOption}></lightning-combobox><br>
+                    <lightning-input data-int2="revenue" label="Annual Revenue" name="AnnualRevenue" onchange={handleChange}></lightning-input><br>
+                </div>
+            </div>
+        </template>
+<div class="slds-var-p-around_medium">
+    <lightning-button label="Update" name="update" type="submit" onclick={handleClick} variant="brand" class="slds-var-p-around_small"></lightning-button>
+    <lightning-button label="clear" name="clear" type="reset" onclick={handleClick} variant="brand" class="slds-var-p-around_small"></lightning-button>
+</div>
+</lightning-card>
+</template>

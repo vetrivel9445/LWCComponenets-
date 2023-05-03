@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="FetchApi 2">
+        <template lwc:if={isClick}>
+            <div class="slds-grid slds-wrap">
+                                <template for:each={outputLst} for:item="emp">
+                                    <div key={emp.Code}>
+                                        <div class="custom-box slds-box slds-var-m-around_xx-small">
+                                            <div class="slds-var-p-around_small">
+                                        <b>Employee Deatails ::</b><br>
+                                        <img src={emp.Photo}><br>
+                                        <b>Name :&nbsp;{emp.Name}<br>
+                                           Salary :&nbsp;{emp.Salary}<br>
+                                           Email :&nbsp;{emp.Email}<br>
+                                        </b>
+                                    </div>
+                                </div>
+                                    </div>
+                                </template>
+</div>
+</template>
+<footer>
+    <div class="slds-p-around_medium">
+        <lightning-input label="Enter the Name for Search" onchange={handleChange}></lightning-input>
+        <lightning-button label="Search" name="srchBtn" onclick={handleClick} variant="brand"></lightning-button>
+        <lightning-button label="Clear" name="clrBtn" onclick={handleClick} variant="destructive"></lightning-button>
+    </div>
+</footer>
+</lightning-card>
+</template>

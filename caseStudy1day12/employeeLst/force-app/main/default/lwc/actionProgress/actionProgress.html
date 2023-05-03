@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Action Progress">
+        <div class="slds-var-p-around_medium">
+            <lightning-button label='Start' variant="brand" name="start" onclick={handleClick}></lightning-button>
+            <c-child-action-progress onfinish={handleFinish}></c-child-action-progress>
+        </div>
+    </lightning-card>
+</template>

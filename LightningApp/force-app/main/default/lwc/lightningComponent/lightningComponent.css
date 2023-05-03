@@ -1,0 +1,17 @@
+.my {
+    background-color: rgb(96, 193, 253);
+    padding: 50px;
+    padding-right: 540px;
+    margin: var(--lwc-squareIconUtilityMedium, 1.25rem);
+    border-radius: 10px;
+}
+
+.p {
+    background-size: 50px;
+    background-color: rgb(2, 10, 168);
+    color: whitesmoke;
+    padding: var(--lwc-squareIconXSmallBoundary, 1.25rem);
+    padding-right: 5%;
+    margin: var(--lwc-squareIconUtilityMedium, 1.25rem);
+    border-radius: 10px;
+}

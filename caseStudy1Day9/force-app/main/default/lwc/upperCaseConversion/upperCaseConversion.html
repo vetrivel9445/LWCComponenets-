@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Upper Case Conversion">
+        <div>
+            <lightning-input name="input1" label="Enter the Name :" onchange={handleChange}></lightning-input>
+            <br>
+            <div if:true={isChange}>
+                Conveted:&nbsp;&nbsp;<b>{Output}</b>
+            </div>
+        </div>
+        
+    </lightning-card>
+</template>

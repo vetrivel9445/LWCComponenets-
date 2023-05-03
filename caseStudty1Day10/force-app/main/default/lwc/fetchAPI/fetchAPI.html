@@ -1,0 +1,36 @@
+<template>
+    <lightning-card>
+        <div class="my">
+                <lightning-layout>
+                    <div class="slds-grid slds-wrap">
+                    <template for:each={output} for:item="emp">
+                        <div key={emp.id}>
+                            <div>
+                                    <span>
+                                        <lightning-layout-item padding="around-small">
+                                            <div class="custom-box slds-box slds-var-p-around_small" > 
+                                                <b>
+                                                    Employee:<br>
+                                                    ID =&nbsp;{emp.id}<br>
+                                                    Name =&nbsp;{emp.name}<br>
+                                                    Email =&nbsp;{emp.email}
+                                                </b>
+                                            </div>
+                                        </lightning-layout-item>
+                                    </span>
+                            </div>
+                        </div>
+                    </template>
+</div>
+</lightning-layout>
+</div>
+<footer>
+    <div class="my">
+        <lightning-input label="Enter the Name" value={inputValue} onchange={handleChange}></lightning-input>
+        <lightning-button label="Search" name="btn1" variant="brand" onclick={handleClick}></lightning-button>
+        <lightning-button label="Clear" name="btn2" variant="Destructive" onclick={handleClick}></lightning-button>
+    </div>
+</footer>
+</lightning-card>
+
+</template>

@@ -1,0 +1,27 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card title="To Do List">
+        <div class="t">
+            <div if:true={isAddClick}>
+                <template for:each={todoLst} for:item="todo">
+                    <div key={todo.id}>
+                        <lightning-layout vertical-align="center">
+                            <lightning-layout-item padding="around-small" size="12">
+                                <div class="custom-box slds-box slds-text-align_center">
+                                    <b>
+                                    {todo.task}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <lightning-button-icon icon-name="utility:delete" value={todo.id} name='delete' variant="border" onclick={handleClick}>
+                                    </lightning-button-icon></b>   
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </div>
+                </template>
+</div>
+<footer>
+    <lightning-input label="Enter the task" onchange={handleChange}></lightning-input>
+    <lightning-button name="addButton" label="Add" variant="brand" onclick={handleClick}></lightning-button>
+</footer>
+</div>
+</lightning-card>
+</template>

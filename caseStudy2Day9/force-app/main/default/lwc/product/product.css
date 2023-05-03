@@ -1,0 +1,15 @@
+.a {
+    background-color: rgb(27, 245, 201);
+    color: #040404;
+    padding: 2%;
+    border-radius: 10px;
+    margin: 2%;
+}
+
+.b {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 2%;
+}

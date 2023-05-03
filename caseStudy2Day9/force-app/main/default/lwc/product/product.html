@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Product ">
+        <div class="a">
+            <lightning-input label="Enter the stock :" onchange={handleChange}></lightning-input>
+        </div>
+        <div if:true={isChange} class="b">
+            <b>Product Details :</b><br>
+            product Name :&nbsp;{product.name}<br>
+            product Price :&nbsp;{product.price}<br>
+            product Stock :&nbsp;{product.stock}
+
+        </div>
+        <div if:true={isZero} class="b">
+            <b>Product Details :</b>
+            &nbsp;No Stock Available
+        </div>
+    </lightning-card>
+</template>

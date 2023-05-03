@@ -1,0 +1,17 @@
+.input {
+    background-color: aqua;
+    color: black;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.output {
+    background-color: rgb(244, 79, 79);
+    color: white;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}

@@ -1,0 +1,10 @@
+<template>
+    <lightning-card>
+    <lightning-button  name="blueButton" variant="brand" label="blue" class="slds-var-m-left_x-small" onclick={handleClick}></lightning-button>
+    <lightning-button name="redButton" variant="Destructive" label="red" class="slds-var-m-left_x-small" onclick={handleClick}></lightning-button>
+    <br>
+    <div if:true={isblue} class='b'>{Output}</div>
+    <br>
+    <div if:true={isred} class="r">{Output}</div>
+</lightning-card>
+</template>

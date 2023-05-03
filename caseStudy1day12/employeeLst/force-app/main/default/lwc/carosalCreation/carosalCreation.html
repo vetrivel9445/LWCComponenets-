@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-size_4-of-4">
+        <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_xxx-small"><b>Player Info</b>
+            <lightning-carousel>
+                <template for:each={player} for:item='p'>
+                <lightning-carousel-image
+                key={p.id}
+                src = {p.Image}
+                header = {p.Name}
+                description = {p.description}
+                href = "javascript:void(0);">
+                </lightning-carousel-image>
+            </template>
+</lightning-carousel>
+</div>
+</div>
+</template>

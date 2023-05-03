@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Picklist Component">
+        <div class="custom-box slds-box slds-var-m-around_medium">
+            <div class="slds-var-p-around_small">
+                <template lwc:if={objectData}>
+                    <lightning-combobox
+                    label=" Select The RecordType::"
+                    name="RecordTypeId"
+                    options={reportTypeOptions}
+                    value={recordValue}
+                    onchange={handleChange}
+                    >
+                    </lightning-combobox>
+                </template>
+<template lwc:if={isNotEmpty}>
+                    <lightning-combobox
+                    label="PickList Fields List ::"
+                    name="pickListFieldValues"
+                    options={pickListOptions}
+                    ></lightning-combobox>
+                </template>
+</div>
+</div>
+</lightning-card>
+</template>

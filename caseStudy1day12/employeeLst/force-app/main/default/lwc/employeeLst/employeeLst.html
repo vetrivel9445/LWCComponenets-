@@ -1,0 +1,25 @@
+<!-- sldsValidatorIgnore -->
+<template>
+        <lightning-card title="To View Employee List">
+            <div class="slds-var-p-around_medium">
+                    <div class="slds-align_absolute-center">
+                        <div class="slds-box slds-var-p-around_medium">
+                            <b>Employee Detail:</b><br>
+                            Employee Id :&nbsp;{id}<br>
+                            Employee Name :&nbsp;{name}<br>
+                            Employee Email :&nbsp;{email}
+                        </div>
+                    </div>
+<footer>
+    <div class="slds-clearfix slds-var-p-around_small">
+        <!-- sldsValidatorIgnoreNextLine -->
+        <lightning-button label="Previous" name="prvBtn" onclick={handleClick} variant="brand" class="slds-float_left "></lightning-button>
+        <lightning-button label="Next" name="nxtBtn" onclick={handleClick} variant="brand" class="slds-float_right"></lightning-button><br>
+        <input type="text" style="width: 25%;" onchange={handleChange} class="slds-align_absolute-center">
+        <button type="button" onclick={handleClick} name="srcBtn" class="slds-align_absolute-center">Search</button>
+
+    </div>
+</footer>
+</div>
+</lightning-card>
+</template>

@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Account">
+        <lightning-button label="Switch to HomePage" variant="brand" slot="actions" onclick={handleAccSwitch}></lightning-button>
+        <div class="slds-box slds-var-m-around_medium">
+            <lightning-record-form
+            object-api-name="Account"
+            fields="Name"
+            record-id="0015g000019ch9pAAA"
+            mode="readonly"
+            >
+            </lightning-record-form>
+        </div>
+    </lightning-card>
+</template>

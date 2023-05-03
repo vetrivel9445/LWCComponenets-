@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Calculator">
+        <p class="my">
+            <lightning-input name="input1" value={firstInput} label="Enter first Input" onchange={handleChange}></lightning-input><br>
+            <lightning-input name="input2" value={secondInput} label="Enter the second Input" onchange={handleChange}>
+            </lightning-input>
+            <br>
+            <br>
+            <lightning-button name="addButton" variant="brand" label="Add" onclick={handleClick} class="slds-var-m-left_x-small">
+            </lightning-button>
+            <lightning-button name="subButton" variant="brand" label="sub" onclick={handleClick} class="slds-var-m-left_x-small">
+            </lightning-button>
+            <lightning-button name="mulButton" variant="brand" label="multiply" onclick={handleClick} class="slds-var-m-left_x-small">
+            </lightning-button>
+            <lightning-button name="divButton" variant="brand" label="divide" onclick={handleClick} class="slds-var-m-left_x-small">
+            </lightning-button>
+            <lightning-button name="clearButton" variant="destructive" label="clear" onclick={handleClick} class="slds-var-m-left_x-small">
+            </lightning-button>
+        </p>
+        <p class="p">
+            <b>
+                Answer: {output}
+            </b>
+        </p>
+    </lightning-card> 
+</template>

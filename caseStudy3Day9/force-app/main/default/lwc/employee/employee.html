@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Employee">
+        <div class='input'>
+            <lightning-input label="Enter the Employee Salary :" onchange={handleChange}></lightning-input>
+        </div>
+        <div if:true={isNotEmpty} class="output">
+            <template for:each={filterSalary} for:item="e">
+                <div key={e.name}>
+                    <b>Employee Details :<br></b>
+                    Employee Name:&nbsp;{e.name}<br>
+                    Employee salary:&nbsp;{e.salary}<br>
+                    Employee position:&nbsp;{e.position}<br>
+                </div>
+            </template>
+</div>
+<div if:true={isEmpty} class="output">
+    No such Employee Exists with that Salary
+</div>
+
+</lightning-card>
+
+</template>

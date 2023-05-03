@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title={objectApiName}>
+        <template lwc:if={objectData}>
+            <div class="slds-box slds-var-m-around_medium">
+                <div class="slds-var-p-around_medium">
+                    <div class="slds-grid slds-gutters slds-wrap">
+                        <div class="slds-col slds-size_2-of-4">
+                        <lightning-input label="Total Number Of the Field Used :-" value={lengthOfTotalField}></lightning-input><br>
+                        <lightning-input label="Total Number Of the Custom Field :-" value={lengthOfCustomField}></lightning-input><br>
+                        <lightning-input label="Total Number Of the PickList Field  :-" value={lengthOfpickLstField}></lightning-input><br>
+                        <lightning-input label="Total Number Of the RecordType   :-" value={lengthOfRecordType}></lightning-input><br>
+                    </div>
+                            <div class="slds-col slds-size_4-of-4">
+                                <b>List of Field API_Names ::</b><br>
+                                <lightning-formatted-rich-text
+                                value={totalFieldsLst}
+                                ></lightning-formatted-rich-text>
+                            </div>
+                            <!---
+                            <template for:each={totalFieldsLst} for:item="api">
+                                <div key={api}>
+                                    {api}<br>
+                                </div>
+                            </template> -->
+</div>
+</div>
+</div>
+</template>
+</lightning-card>
+</template>
